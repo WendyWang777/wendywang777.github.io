@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Demo com5961
+    </title>
+</head>
+<body>
+        <body>
+                <h1>how to create a webpage</h1>
+                <h2 style="
+                border-style: solid;
+                border-width: 5px;
+                background-color: #ffc800ba;
+                text-align: center;
+                border-color: skyblue;
+                color: darkslateblue;
+                font-size: large;
+                font-family: sans-serif;
+                width: 40%;
+                padding: 20px;
+                float: left;
+                margin-left: 30px;
+                margin-top: 100px;
+            ">My name is Wendy.</h2>
+                <h3 style="
+                border-style: solid;
+                border-width: 5px;
+                width: 50%;
+                float: right;
+            ">I hope you like it here.</h3>
+                <p style="
+                clear: both;
+            ">It's easy and fun.</p>
+                <b>Bold text</b>
+                <i>Italic text</i>
+                <u>Underlined text</u>
+                <sub>Subscript text</sub>
+                <sup>Superscript text</sup>
+                <img src="http://www.cuhk.edu.hk/chinese/images/cuhk_logo_2x.png?20150907" border="2" style="
+                border-color: crimson;
+                float: left;
+                padding: 20px;
+                margin-right: 30px;
+            ">
+                <br>
+                <a href="https://www.cuhk.edu.hk" target="_blank">This is a link to the website.</a>
+                <ol>
+                    <li>apples</li>
+                    <ul>
+                        <li>golden delicious</li>
+                        <li>granny smith</li>
+                        <li>gala</li>
+                    </ul>
+                    <li>oranges</li>
+                    <li>pineapples</li>
+                    <li>mangoes</li>
+                    <li>dragonfruit</li>
+                </ol>
+                <br>
+                <table border="2" cellpadding="10" cellspacing="0">
+                <tbody><tr>
+                    <th></th>
+                    <th>Month</th>
+                    <th>Rent</th>
+                    <th colspan="2">Utilities</th>
+                    <th>Groceries</th>
+                    <th>Eating out</th>
+                    <th>Entertainment</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">fall</td>
+                    <td>August</td>
+                    <td>$1500</td>
+                    <td>$150</td>
+                    <td>$150</td>
+                    <td>$350</td>
+                    <td>$100</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                        <td>September</td>
+                        <td>$1530</td>
+                        <td>$110</td>
+                        <td>$150</td>
+                        <td>$350</td>
+                        <td>$100</td>
+                        <td>$50</td>
+                </tr>
+                <tr>
+                        <td>October</td>
+                        <td>$1530</td>
+                        <td>$110</td>
+                        <td>$350</td> 
+                        <td>$150</td>
+                        <td>$100</td>
+                        <td>$50</td>
+                </tr>
+                </tbody></table>
+            <!-- Code injected by live-server -->
+            <script type="text/javascript">
+                // <![CDATA[  <-- For SVG support
+                if ('WebSocket' in window) {
+                    (function () {
+                        function refreshCSS() {
+                            var sheets = [].slice.call(document.getElementsByTagName("link"));
+                            var head = document.getElementsByTagName("head")[0];
+                            for (var i = 0; i < sheets.length; ++i) {
+                                var elem = sheets[i];
+                                var parent = elem.parentElement || head;
+                                parent.removeChild(elem);
+                                var rel = elem.rel;
+                                if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                                    var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                                    elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                                }
+                                parent.appendChild(elem);
+                            }
+                        }
+                        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                        var address = protocol + window.location.host + window.location.pathname + '/ws';
+                        var socket = new WebSocket(address);
+                        socket.onmessage = function (msg) {
+                            if (msg.data == 'reload') window.location.reload();
+                            else if (msg.data == 'refreshcss') refreshCSS();
+                        };
+                        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                            console.log('Live reload enabled.');
+                            sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                        }
+                    })();
+                }
+                else {
+                    console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+                }
+                // ]]>
+            </script>
+            
+            </body>
+</body>
+
+</html>
