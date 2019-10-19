@@ -1,0 +1,454 @@
+ {  
+      "data"     :     [  
+  {
+    "player_name": "DYG.JC.星宇",
+    "player_team": "RNG.M",
+    "player_kda": 7.6,
+    "player_rate": 0.764,
+    "player_kill": 2,
+    "player_death": 1,
+    "player_assist": 5.6
+  },
+  {
+    "player_name": "RW侠.Yguo",
+    "player_team": "RW侠",
+    "player_kda": 7,
+    "player_rate": 0.778,
+    "player_kill": 2.9,
+    "player_death": 1.2,
+    "player_assist": 5.4
+  },
+  {
+    "player_name": "RNGM.暴风锐",
+    "player_team": "RNG.M",
+    "player_kda": 7,
+    "player_rate": 0.784,
+    "player_kill": 3.3,
+    "player_death": 1.3,
+    "player_assist": 5.9
+  },
+  {
+    "player_name": "RNGM.虔诚",
+    "player_team": "RNG.M",
+    "player_kda": 5.8,
+    "player_rate": 0.754,
+    "player_kill": 4,
+    "player_death": 1.5,
+    "player_assist": 4.6
+  },
+  {
+    "player_name": "WE.DogRan",
+    "player_team": "WE",
+    "player_kda": 5.6,
+    "player_rate": 0.76,
+    "player_kill": 3,
+    "player_death": 1.5,
+    "player_assist": 5.6
+  },
+  {
+    "player_name": "TES.心醉",
+    "player_team": "TES",
+    "player_kda": 5.5,
+    "player_rate": 0.746,
+    "player_kill": 2.5,
+    "player_death": 1.2,
+    "player_assist": 4
+  },
+  {
+    "player_name": "VG.笑",
+    "player_team": "VG",
+    "player_kda": 5.5,
+    "player_rate": 0.783,
+    "player_kill": 2.7,
+    "player_death": 1.3,
+    "player_assist": 4.2
+  },
+  {
+    "player_name": "eStarPro.花...",
+    "player_team": "eStarPro",
+    "player_kda": 5.4,
+    "player_rate": 0.72,
+    "player_kill": 3.6,
+    "player_death": 1.4,
+    "player_assist": 4.2
+  },
+  {
+    "player_name": "RNGM.白羽",
+    "player_team": "RNG.M",
+    "player_kda": 5.3,
+    "player_rate": 0.593,
+    "player_kill": 1.7,
+    "player_death": 1,
+    "player_assist": 3.7
+  },
+  {
+    "player_name": "EDGM.初晨",
+    "player_team": "EDG.M",
+    "player_kda": 5.2,
+    "player_rate": 0.777,
+    "player_kill": 3.7,
+    "player_death": 1.5,
+    "player_assist": 3.9
+  },
+  {
+    "player_name": "GK.青枫",
+    "player_team": "GK",
+    "player_kda": 5.1,
+    "player_rate": 0.738,
+    "player_kill": 2.7,
+    "player_death": 1.6,
+    "player_assist": 5.6
+  },
+  {
+    "player_name": "WE.762",
+    "player_team": "WE",
+    "player_kda": 4.9,
+    "player_rate": 0.671,
+    "player_kill": 3.1,
+    "player_death": 1.6,
+    "player_assist": 4.5
+  },
+  {
+    "player_name": "DYG.JC.青浪",
+    "player_team": "DYG.JC",
+    "player_kda": 4.6,
+    "player_rate": 0.71,
+    "player_kill": 2.5,
+    "player_death": 1.5,
+    "player_assist": 4.2
+  },
+  {
+    "player_name": "XQ.Ku",
+    "player_team": "XQ",
+    "player_kda": 4.5,
+    "player_rate": 0.846,
+    "player_kill": 0.7,
+    "player_death": 1.8,
+    "player_assist": 7.2
+  },
+  {
+    "player_name": "QGhappy.Mo...",
+    "player_team": "QGhappy",
+    "player_kda": 4.5,
+    "player_rate": 0.727,
+    "player_kill": 2.4,
+    "player_death": 1.6,
+    "player_assist": 4.6
+  },
+  {
+    "player_name": "QGhappy.Hu...",
+    "player_team": "QGhappy",
+    "player_kda": 4.5,
+    "player_rate": 0.728,
+    "player_kill": 3,
+    "player_death": 1.5,
+    "player_assist": 3.9
+  },
+  {
+    "player_name": "AG超玩会.小剑",
+    "player_team": "BA黑凤梨",
+    "player_kda": 4.5,
+    "player_rate": 0.722,
+    "player_kill": 2,
+    "player_death": 1.6,
+    "player_assist": 5
+  },
+  {
+    "player_name": "RNGM.阿斗",
+    "player_team": "RNG.M",
+    "player_kda": 4.4,
+    "player_rate": 0.69,
+    "player_kill": 3.3,
+    "player_death": 3,
+    "player_assist": 10
+  },
+  {
+    "player_name": "EDGM.浪浪",
+    "player_team": "EDG.M",
+    "player_kda": 4.3,
+    "player_rate": 0.764,
+    "player_kill": 2.5,
+    "player_death": 1.7,
+    "player_assist": 5
+  },
+  {
+    "player_name": "XQ.九尾",
+    "player_team": "XQ",
+    "player_kda": 4.2,
+    "player_rate": 0.739,
+    "player_kill": 3,
+    "player_death": 1.8,
+    "player_assist": 4.4
+  },
+  {
+    "player_name": "GK.伊恩",
+    "player_team": "QGhappy",
+    "player_kda": 4.1,
+    "player_rate": 0.744,
+    "player_kill": 0.9,
+    "player_death": 1.8,
+    "player_assist": 6.7
+  },
+  {
+    "player_name": "Hero.久诚",
+    "player_team": "Hero",
+    "player_kda": 4.1,
+    "player_rate": 0.741,
+    "player_kill": 2.8,
+    "player_death": 2,
+    "player_assist": 5.2
+  },
+  {
+    "player_name": "Ts.破碎",
+    "player_team": "Ts",
+    "player_kda": 4,
+    "player_rate": 0.696,
+    "player_kill": 2.5,
+    "player_death": 1.8,
+    "player_assist": 4.9
+  },
+  {
+    "player_name": "AG超玩会.MC",
+    "player_team": "eStarPro",
+    "player_kda": 4,
+    "player_rate": 0.8,
+    "player_kill": 0.8,
+    "player_death": 1.8,
+    "player_assist": 6.5
+  },
+  {
+    "player_name": "WE.994",
+    "player_team": "WE",
+    "player_kda": 3.9,
+    "player_rate": 0.749,
+    "player_kill": 0.5,
+    "player_death": 2.2,
+    "player_assist": 8
+  },
+  {
+    "player_name": "GK.阿改",
+    "player_team": "GK",
+    "player_kda": 3.9,
+    "player_rate": 0.613,
+    "player_kill": 1.5,
+    "player_death": 1.8,
+    "player_assist": 5.4
+  },
+  {
+    "player_name": "eStarPro.Cat",
+    "player_team": "eStarPro",
+    "player_kda": 3.8,
+    "player_rate": 0.726,
+    "player_kill": 3,
+    "player_death": 2,
+    "player_assist": 4.9
+  },
+  {
+    "player_name": "TES.江陵",
+    "player_team": "TES",
+    "player_kda": 3.8,
+    "player_rate": 0.741,
+    "player_kill": 1.8,
+    "player_death": 1.5,
+    "player_assist": 3.8
+  },
+  {
+    "player_name": "GK.鹏鹏",
+    "player_team": "GK",
+    "player_kda": 3.8,
+    "player_rate": 0.697,
+    "player_kill": 3.8,
+    "player_death": 2.1,
+    "player_assist": 4.2
+  },
+  {
+    "player_name": "eStarPro.无铭",
+    "player_team": "eStarPro",
+    "player_kda": 3.8,
+    "player_rate": 0.727,
+    "player_kill": 0.5,
+    "player_death": 2.1,
+    "player_assist": 7.5
+  },
+  {
+    "player_name": "YTG.晴一",
+    "player_team": "YTG",
+    "player_kda": 3.7,
+    "player_rate": 0.721,
+    "player_kill": 2.9,
+    "player_death": 2.1,
+    "player_assist": 5.1
+  },
+  {
+    "player_name": "Ts.十三",
+    "player_team": "Ts",
+    "player_kda": 3.7,
+    "player_rate": 0.631,
+    "player_kill": 2.7,
+    "player_death": 1.7,
+    "player_assist": 3.6
+  },
+  {
+    "player_name": "RW侠.Hmanlou",
+    "player_team": "RW侠",
+    "player_kda": 3.7,
+    "player_rate": 0.683,
+    "player_kill": 2.9,
+    "player_death": 2,
+    "player_assist": 4.3
+  },
+  {
+    "player_name": "JC.南木",
+    "player_team": "DYG.JC",
+    "player_kda": 3.6,
+    "player_rate": 0.781,
+    "player_kill": 0.6,
+    "player_death": 2.2,
+    "player_assist": 7.5
+  },
+  {
+    "player_name": "VG.空",
+    "player_team": "VG",
+    "player_kda": 3.5,
+    "player_rate": 0.683,
+    "player_kill": 2.1,
+    "player_death": 1.7,
+    "player_assist": 3.9
+  },
+  {
+    "player_name": "XQ.绑兔",
+    "player_team": "WE",
+    "player_kda": 3.5,
+    "player_rate": 0.689,
+    "player_kill": 3.2,
+    "player_death": 2.2,
+    "player_assist": 4.6
+  },
+  {
+    "player_name": "Ts.诗酒",
+    "player_team": "Ts",
+    "player_kda": 3.5,
+    "player_rate": 0.62,
+    "player_kill": 1.9,
+    "player_death": 1.5,
+    "player_assist": 3.2
+  },
+  {
+    "player_name": "VG.胖墩",
+    "player_team": "GK",
+    "player_kda": 3.5,
+    "player_rate": 0.715,
+    "player_kill": 0.8,
+    "player_death": 2.3,
+    "player_assist": 7.3
+  },
+  {
+    "player_name": "XQ.钎城",
+    "player_team": "XQ",
+    "player_kda": 3.4,
+    "player_rate": 0.641,
+    "player_kill": 2.5,
+    "player_death": 1.9,
+    "player_assist": 4
+  },
+  {
+    "player_name": "EDGM.柠栀",
+    "player_team": "Hero",
+    "player_kda": 3.4,
+    "player_rate": 0.534,
+    "player_kill": 2.2,
+    "player_death": 1.7,
+    "player_assist": 3.6
+  },
+  {
+    "player_name": "YTG.夏天",
+    "player_team": "YTG",
+    "player_kda": 3.4,
+    "player_rate": 0.719,
+    "player_kill": 3.5,
+    "player_death": 2.3,
+    "player_assist": 4.2
+  },
+  {
+    "player_name": "QGhppy.139",
+    "player_team": "BA黑凤梨",
+    "player_kda": 3.4,
+    "player_rate": 0.661,
+    "player_kill": 3.2,
+    "player_death": 2,
+    "player_assist": 3.5
+  },
+  {
+    "player_name": "AG超玩会.Top",
+    "player_team": "BA黑凤梨",
+    "player_kda": 3.4,
+    "player_rate": 0.712,
+    "player_kill": 0.8,
+    "player_death": 2.4,
+    "player_assist": 7.2
+  },
+  {
+    "player_name": "XQ.1987",
+    "player_team": "XQ",
+    "player_kda": 3.3,
+    "player_rate": 0.654,
+    "player_kill": 3.1,
+    "player_death": 2.1,
+    "player_assist": 3.9
+  },
+  {
+    "player_name": "TES.道尔",
+    "player_team": "TES",
+    "player_kda": 3.3,
+    "player_rate": 0.706,
+    "player_kill": 3.2,
+    "player_death": 2.2,
+    "player_assist": 4
+  },
+  {
+    "player_name": "RNGM.雨雨",
+    "player_team": "RNG.M",
+    "player_kda": 3.3,
+    "player_rate": 0.48,
+    "player_kill": 1.8,
+    "player_death": 1.6,
+    "player_assist": 3.6
+  },
+  {
+    "player_name": "RNGM.凉晨",
+    "player_team": "RNG.M",
+    "player_kda": 3.2,
+    "player_rate": 0.589,
+    "player_kill": 1.7,
+    "player_death": 2.1,
+    "player_assist": 5.1
+  },
+  {
+    "player_name": "Ts.阿豆",
+    "player_team": "Ts",
+    "player_kda": 3.2,
+    "player_rate": 0.653,
+    "player_kill": 0.6,
+    "player_death": 2,
+    "player_assist": 5.9
+  },
+  {
+    "player_name": "Ts.暖阳",
+    "player_team": "Ts",
+    "player_kda": 3.2,
+    "player_rate": 0.699,
+    "player_kill": 3,
+    "player_death": 2.2,
+    "player_assist": 4
+  },
+  {
+    "player_name": "TES.迷神",
+    "player_team": "TES",
+    "player_kda": 3.2,
+    "player_rate": 0.525,
+    "player_kill": 2.6,
+    "player_death": 1.9,
+    "player_assist": 3.3
+  }
+]
+ }  
