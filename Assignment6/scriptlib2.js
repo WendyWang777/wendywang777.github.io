@@ -18,17 +18,16 @@ $(document).ready(function(){
     $("button#get_data").click(function() {
         var items = [];
         var i = 0;
-        var airtable_read_endpoint = "https://api.airtable.com/v0/appKIU0zkdHt3AVTL/Product?api_key=keylSBEfApc4bXPo6";
+        var airtable_read_endpoint = "https://api.airtable.com/v0/appYyPNlsG08JhuCm/Robster?api_key=keylSBEfApc4bXPo6";
         var dataSet = [];
         $.getJSON(airtable_read_endpoint, function(result) {
                $.each(result.records, function(key,value) {
                    items = [];
+                       items.push(value.fields.nickname);
                        items.push(value.fields.name);
-                       items.push(value.fields.notes);
-                       items.push(value.fields.attachments);
-                       items.push(value.fields.position;
+                       items.push(value.fields.position);
                        items.push(value.fields.team_name);
-                       items.push(value.fields.team_view);
+                       items.push(value.fields.attachments);
                        dataSet.push(items);
                        console.log(items);
                 }); // end .each
@@ -38,15 +37,15 @@ $(document).ready(function(){
                  data: dataSet,
                  retrieve: true,
                  columns: [
-                     { title: "name",
+                     { title: "nickname",
                        defaultContent:""},
-                     { title: "notes",
+                     { title: "name",
                          defaultContent:"" },
-                     { title: "attachments",
+                     { title: "position",
                        defaultContent:"" },
                      { title: "team_name",
                        defaultContent:""},
-                     { title: "team_view",
+                     { title: "attachments",
                          defaultContent:""},
                  ]
              } );
