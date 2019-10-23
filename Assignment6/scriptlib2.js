@@ -27,7 +27,6 @@ $(document).ready(function(){
                        items.push(value.fields.name);
                        items.push(value.fields.position);
                        items.push(value.fields.team_name);
-                       items.push(value.fields.attachments);
                        dataSet.push(items);
                        console.log(items);
                 }); // end .each
@@ -45,8 +44,6 @@ $(document).ready(function(){
                        defaultContent:"" },
                      { title: "team_name",
                        defaultContent:""},
-                     { title: "attachments",
-                         defaultContent:""},
                  ]
              } );
         }); // end .getJSON
