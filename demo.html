@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chart Demo</title>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="chart"></div>
+<h1 id="chart">This text will not be visible</h1>
+<script>
+var chart = c3.generate({
+    data: {
+        columns: [
+            ['Lulu', 50],
+            ['Olaf', 50],
+        ],
+        type : 'donut'
+    },
+    donut: {
+        title: "Dogs love:",
+    }
+});
+</script>
+</body>
+</html>
