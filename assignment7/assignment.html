@@ -81,7 +81,7 @@
 
     var map = L.map('map')
           .addLayer(mapboxTiles)
-          .setView([22.523802,113.95561], 13);
+          .setView([31.161852,121.483980], 13);
 
 
     var items = [];
@@ -94,8 +94,8 @@
                    items["time_period"] = value.fields.time_period;
                    items["place"] = value.fields.place;
                    items["wiki_url"] = value.fields.wiki_url;
-                   items["latitude"] = value.fields.lat;
-                   items["longitude"] = value.fields.lng;
+                   items["latitud"] = value.fields.lat;
+                   items["longitud"] = value.fields.lng;
                    items["image"] = value.fields.img;
                    items["img_url"] = value.fields.url;
                    data.push(items);
@@ -108,9 +108,9 @@
     function show_districts(){
 
       for (var i in data) {
-          var latlng = L.latLng({ lat: data[i].latitude, lng: data[i].longitude });
+          var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
           L.marker( latlng )
-              .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].urls+'" width = "80px"><br>'+data[i].place + '</a>' )
+              .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].img_url+'" width = "80px"><br>'+data[i].place + '</a>' )
               .addTo(map);
       }
 
