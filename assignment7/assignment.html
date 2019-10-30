@@ -81,21 +81,23 @@
 
     var map = L.map('map')
           .addLayer(mapboxTiles)
-          .setView([22.287111, 114.191667], 13);
+          .setView([22.523802,113.95561], 13);
 
 
     var items = [];
-    var airtable_read_endpoint = "https://api.airtable.com/v0/appKIU0zkdHt3AVTL/Venues?api_key=keycj6dRwXwYLEjiv";
+    var airtable_read_endpoint = "https://api.airtable.com/v0/apprsp3Ywu5addhw4/KPL_FINALGAME_PLACE?api_key=keylSBEfApc4bXPo6";
 
     var data = [];
     $.getJSON(airtable_read_endpoint, function(result) {
            $.each(result.records, function(key,value) {
                items = {};
-                   items["name"] = value.fields.Name;
-                   items["url"] = value.fields.url;
-                   items["image_url"] = value.fields.img_url;
-                   items["latitud"] = value.fields.Lat;
-                   items["longitud"] = value.fields.Lng;
+                   items["time_period"] = value.fields.time_period;
+                   items["place"] = value.fields.place;
+                   items["wiki_url"] = value.fields.wiki_url;
+                   items["latitude"] = value.fields.lat;
+                   items["longitude"] = value.fields.lng;
+                   items["image"] = value.fields.img;
+                   items["img_url"] = value.fields.url;
                    data.push(items);
                    console.log(items);
             }); // end .each
@@ -106,7 +108,7 @@
     function show_districts(){
 
       for (var i in data) {
-          var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+          var latlng = L.latLng({ lat: data[i].latitude, lng: data[i].longitude });
           L.marker( latlng )
               .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
               .addTo(map);
