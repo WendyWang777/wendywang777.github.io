@@ -85,7 +85,7 @@
 
 
     var items = [];
-    var airtable_read_endpoint = "https://api.airtable.com/v0/apprsp3Ywu5addhw4/KPL_FINALGAME_PLACE?api_key=keylSBEfApc4bXPo6";
+    var airtable_read_endpoint = "https://api.airtable.com/v0/apprsp3Ywu5addhw4/map?api_key=keylSBEfApc4bXPo6";
 
     var data = [];
     $.getJSON(airtable_read_endpoint, function(result) {
@@ -97,7 +97,7 @@
                    items["latitud"] = value.fields.lat;
                    items["longitud"] = value.fields.lng;
                    items["image"] = value.fields.img;
-                   items["img_url"] = value.fields.url;
+                   items["image_url"] = value.fields.url;
                    data.push(items);
                    console.log(items);
             }); // end .each
@@ -108,7 +108,7 @@
     function show_districts(){
 
       for (var i in data) {
-          var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+          var latlng = L.latlng({ lat: data[i].latitud, lng: data[i].longitud });
           L.marker( latlng )
               .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].img_url+'" width = "80px"><br>'+data[i].place + '</a>' )
               .addTo(map);
