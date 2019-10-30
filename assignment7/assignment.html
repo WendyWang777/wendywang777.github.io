@@ -81,42 +81,40 @@
 
     var map = L.map('map')
           .addLayer(mapboxTiles)
-          .setView([31.161852,121.483980], 13);
+          .setView([31.161852,121.483980], 4);
 
 
     var items = [];
-    var airtable_read_endpoint = "https://api.airtable.com/v0/apprsp3Ywu5addhw4/map?api_key=keylSBEfApc4bXPo6";
-
+    var airtable_read_endpoint = "https://api.airtable.com/v0/app1wlwKehOFNIQfW/map?api_key=keylSBEfApc4bXPo6";
     var data = [];
     $.getJSON(airtable_read_endpoint, function(result) {
            $.each(result.records, function(key,value) {
                items = {};
-                   items["time_period"] = value.fields.time_period;
-                   items["place"] = value.fields.place;
-                   items["wiki_url"] = value.fields.wiki_url;
+                   items["name"] = value.fields.name;
+                   items["url"] = value.fields.url;
+                   items["image_url"] = value.fields.img_url;
                    items["latitud"] = value.fields.lat;
                    items["longitud"] = value.fields.lng;
-                   items["image"] = value.fields.img;
-                   items["image_url"] = value.fields.url;
                    data.push(items);
                    console.log(items);
             }); // end .each
     }); // end getJSON
   </script>
 
-  <script>
-    function show_districts(){
+<script>
+  function show_districts(){
 
-      for (var i in data) {
-          var latlng = L.latlng({ lat: data[i].latitud, lng: data[i].longitud });
-          L.marker( latlng )
-              .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].img_url+'" width = "80px"><br>'+data[i].place + '</a>' )
-              .addTo(map);
-      }
-
+    for (var i in data) {
+        var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+        L.marker( latlng )
+            .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+            .addTo(map);
     }
 
-  </script>
+  }
+
+</script>
+
 
   <script src='table.js'></script>
 </body>
