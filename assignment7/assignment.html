@@ -1,23 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Assignment7</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
-    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js">
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+    
+    <head>
+        <title>Assignment7</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+        <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js">
+</script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css"
+        rel="stylesheet" type="text/css">
+        <link href="style2.css" rel="stylesheet" type="text/css">
     <style type="text/css">
      #map {
         height: 100%;
@@ -48,40 +51,67 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:orange;
+    background-color:green;
     color: white;
     text-align: center;
   }
   </style>
   
   <div class="footer">
-    <p>Welcome to my website!</p>
+    <p>WANG, Xiliu; 1155136945</p>
   </div>
 
-<div class="container">
-  <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12">
-      <h1>Assignment 7</h1>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Wang Xiliu, 1155136945</h5>
-          </div>
-        </div><!-- end card -->
         <!-- Sign and date the page, it's only polite! -->
-        <button type="button" class="btn btn-warning" id='get_data'>Show Table</button><br>
+        <div class="cover">
+          <div class="navbar navbar-default">
+              <div class="container">
+                  <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">Homepage</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                      <ul class="nav navbar-nav navbar-right">
+                          <li class="active">
+                              <a href="#">chart</a>
+                          </li>
+                          <li>
+                              <a href="#">map</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="cover-image"></div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h2 class="text-center text-success">Assignment 7</h2>
+                    <div class="page-header">
+                        <h3>Table &amp; Chart</h3>
+                    </div>
+                    <div class="card" style="width: 3rem;">
+                      <div class="card-body"></div>
+                  </div>
+        <button type="button" class="btn btn-success btn-xs" id='get_data'>Show Table</button><br>
         <div class="table-responsive">
               <table id="table1" width="100%" class="table table-bordered"></table>
         </div><!-- table responsive -->
-        <button type="button" class="btn btn-warning" id='get_data2'>Show Total</button><br>
+        <button type="button" class="btn btn-success btn-xs" id='get_data2'>Show Total</button><br>
         <div class="table-responsive">
               <table id="table2" width="100%" class="table table-bordered"></table>
         </div><!-- table responsive -->
         <div id="chart"></div>
-        <h1>Leaflet Example</h1>
+        <h3>Map</h3>
         <div class="row">
            <div class="col-xs-12 col-sm-12 col-md-12">
-             <button type="button" class="btn btn-warning" id='roll_up' onclick="show_districts();">Show Districts</button><br>
-            <div id="map" style="width: 500px; height: 300px"></div>
+             <button type="button" class="btn btn-success btn-xs" id='roll_up' onclick="show_districts();">Show Districts</button><br>
+            <div id="map" style="width: 400px; height: 200px"></div>
            </div><!-- column -->
         </div><!-- row -->
       </div><!-- end col -->
