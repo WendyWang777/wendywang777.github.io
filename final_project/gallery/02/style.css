@@ -1,0 +1,29 @@
+/*
+    Theme Name: Lonely
+    Theme URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+*/
+/* ==== Google font ==== */
+@import url(https://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600,400italic,700);
+
+
+
+
+
+/* ==========================
+--- Gallery
+============================= */
+
+
+.item {
+    margin: 10px;
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}	
+
+

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>王者榮耀職業聯賽</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="KPL, KRKPL, KCC" />
+	
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script> 
+	<!--// Meta tag Keywords -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js">
+</script>
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link href="css/agency.min.css" rel="stylesheet">
+	<!-- //css files -->
+	
+	<!--web font-->
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+	<!--//web font-->
+
+</head>
+
+<body>
+
+<!-- //header -->
+<header>	
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-md-4">
+        <div id="logo">
+			<h1> <a href="#index.html"><span class="fa fa-glass" aria-hidden="true"></span> KPL <span class="block">王者榮耀職業聯賽</span></a></h1>
+		</div>
+
+        <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu mt-md-3">
+                <li class="mr-lg-4 mr-3 active"><a href="#"></a></li>
+                <li class="mr-lg-4 mr-3">
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                <a href="#">主頁<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <input type="checkbox" id="drop-2"/>
+                <ul class="drop-down">
+                    <li><a href="#about">往日榮耀</a></li>
+                    <li><a href="#events">近期賽程</a></li>
+                    <li><a href="#portfolio">各聯賽簡介</a></li>
+                    <li><a href="#contact">比賽地點</a></li>
+                </ul>
+                </li>
+				<li class="mr-lg-4 mr-3"><a href="team.html">戰隊及數據</a></li>
+				<li class="mr-lg-4 mr-3"><a href="video.html">精彩集錦</a></li>
+				<li class="mr-lg-4 mr-3"><a href="question.html">分享區</a></li>
+            </ul>
+        </nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+		
+<!-- banner -->
+<section class="banner" id="home">
+	<div class="banner-layer">
+		<div class="container">
+			<div class="w3pvt_banner_info text-center">
+				<div class="w3layouts_banner_margin">
+					<br>
+	
+					<a href="#events"> 精彩賽程 </a>
+				</div>
+			</div>
+			<!-- To bottom button-->
+			<div class="thim-click-to-bottom mt-5 pt-md-5">
+				<div class="rotate">
+					<a href="#about" class="scroll">
+						<span class="fa fa-angle-double-down"></span>
+					</a>
+				</div>
+			</div>
+			<!-- //To bottom button-->
+		</div>
+	</div>
+</section>
+<!-- //banner -->	
+
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+<!-- about -->
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Noto+Serif+TC&display=swap');
+	</style>
+<section class="about py-5" id="about">
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/WnZ_j6_YbM8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+<!-- about -->
+
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+
+<!-- events -->
+<section class="events py-5 " id="events">
+
+</section>
+<!-- //events -->
+<section id="schedule" class="section-with-bg">
+	<div class="container wow fadeInUp">
+	  <div class="section-header">
+		<h2>近期賽程</h2>
+<br>
+<br>
+	  </div>
+
+	  <ul class="nav nav-tabs" role="tablist">
+		<li class="nav-item">
+		  <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">第一週</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">第二週</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">第三週</a>
+		</li>
+	  </ul>
+
+	  <div class="tab-content row justify-content-center">
+
+		<!-- Schdule Day 1 -->
+		<div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組第一輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				  <img src="img/team/000.png" alt="000">
+				</div>  
+				<h4>11.14 7:00 PM</h4>            
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組第一輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/01.png" alt="001">
+			  </div>
+			  <h4>11.15 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組第二輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/02.png" alt="002">
+			  </div>
+			  <h4>11.16 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組第二輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/03.png" alt="003">
+			  </div>
+			  <h4>11.17 7:00 PM</h4>
+			</div>
+		  </div>
+
+		</div>
+		<!-- End Schdule Day 1 -->
+
+		<!-- Schdule Day 2 -->
+		<div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>勝者組第一輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/04.png" alt="004">
+			  </div>
+			  <h4>11.21 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>勝者組第一輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/05.png" alt="005">
+			  </div>
+			  <h4>11.22 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組第三輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/06.png" alt="006">
+			  </div>
+			  <h4>11.23 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組第三輪</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/07.png" alt="007">
+			  </div>
+			  <h4>11.24 7:00 PM</h4>
+			</div>
+		  </div>
+
+
+		</div>
+		<!-- End Schdule Day 2 -->
+
+		<!-- Schdule Day 3 -->
+		<div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組半決賽</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/08.png" alt="008">
+			  </div>
+			  <h4>11.29 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>勝者組決賽</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/12.png" alt="012">
+			</div>
+			<h4>11.30 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>敗者組決賽</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/09.png" alt="009">
+			</div>
+			<h4>12.1 7:00 PM</h4>
+			</div>
+		  </div>
+
+		  <div class="row schedule-item">
+			<div class="col-md-2"><time>總決賽</time></div>
+			<div class="col-md-10">
+			  <div class="speaker">
+				<img src="img/team/10.png" alt="010">
+			</div>
+			<h4>12.14 7:00 PM</h4>
+			</div>
+		  </div>
+
+
+		</div>
+		<!-- End Schdule Day 2 -->
+		<script src="js/main.js"></script>
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/jquery/jquery-migrate.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+	  </div>
+
+	</div>
+
+  </section>
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+
+<!-- what we do -->
+<section class="bg-light page-section" id="portfolio">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-12 text-center">
+			  <h2 class="section-heading text-uppercase">各聯賽簡介</h2>
+			  <h3 class="section-subheading text-muted">不同比賽不同的特點</h3>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-md-4 col-sm-6 portfolio-item">
+			  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+				<div class="portfolio-hover">
+				  <div class="portfolio-hover-content">
+					<i class="fas fa-plus fa-3x"></i>
+				  </div>
+				</div>
+				<img class="img-fluid" src="img/portfolio/kpl.png" alt="">
+			  </a>
+			  <div class="portfolio-caption">
+				<h4>KPL</h4>
+				<p class="text-muted">王者榮耀職業聯賽</p>
+			  </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+			  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+				<div class="portfolio-hover">
+				  <div class="portfolio-hover-content">
+					<i class="fas fa-plus fa-3x"></i>
+				  </div>
+				</div>
+				<img class="img-fluid" src="img/portfolio/kcc.png" alt="">
+			  </a>
+			  <div class="portfolio-caption">
+				<h4>KCC</h4>
+				<p class="text-muted">王者榮耀世界冠軍杯</p>
+			  </div>
+			</div>
+			<div class="col-md-4 col-sm-6 portfolio-item">
+			  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+				<div class="portfolio-hover">
+				  <div class="portfolio-hover-content">
+					<i class="fas fa-plus fa-3x"></i>
+				  </div>
+				</div>
+				<img class="img-fluid" src="img/portfolio/krkpl.png" alt="">
+			  </a>
+			  <div class="portfolio-caption">
+				<h4>KRKPL</h4>
+				<p class="text-muted">王者榮耀韓國職業聯賽</p>
+			  </div>
+			</div>
+	 
+	
+	  </section>
+	
+	 
+	  <!-- Portfolio Modals -->
+	
+	  <!-- Modal 1 -->
+	  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+			  <div class="lr">
+				<div class="rl"></div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-8 mx-auto">
+				  <div class="modal-body">
+					<!-- Project Details Go Here -->
+					<h2 class="text-uppercase">王者榮耀職業聯賽</h2>
+					<p class="item-intro text-muted">King Pro League</p>
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/kpl_poster.jpeg" alt="">
+					<p>王者荣耀职业联赛（简称KPL）是官方最高规格专业晋级赛事。全年分别为春季赛和秋季赛两个赛季，每个赛季分为常规赛、季后赛及总决赛三部分。2019年王者荣耀职业联赛春季赛于3月6日在成都量子光打响。2019年KPL春季赛分为常规赛、季后赛及总决赛三部分，仍然采取东西部分区赛制，队伍数量由14支扩军至15支。赛区间对抗将采用单循环赛制，每个俱乐部在常规赛期间与其他所有对手仅有一次交手机会，常规赛采用BO5全局BP模式。季后赛开始启用BO7全局BP+巅峰对决模式，东西部队伍将按照对应名次直接相互交手，共同争夺总冠军。</p>
+					<ul class="list-inline">
+					  <li>春季賽：每年3月</li>
+					  <li>秋季賽：每年9月</li>
+					  <li>誕生時間：2016年9月</li>
+					</ul>
+					<button class="btn btn-info" data-dismiss="modal" type="button">
+					  <i class="fas fa-times"></i>
+					  關閉</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+	  <!-- Modal 2 -->
+	  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+			  <div class="lr">
+				<div class="rl"></div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-8 mx-auto">
+				  <div class="modal-body">
+					<!-- Project Details Go Here -->
+					<h2 class="text-uppercase">王者榮耀世界冠軍杯</h2>
+					<p class="item-intro text-muted">Kings World Champion Cup</p>
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/kcc.jpeg" alt="">
+					<p>王者荣耀世界冠军杯（简称KCC）是官方最高规格专业晋级赛事。全年分别为夏冠杯和冬冠杯。比赛分为小组赛、淘汰赛及总决赛三部分。2019年王者荣耀世界冠军杯正赛将于7月10日在韩国首尔开启，淘汰赛将于7月27日在马来西亚吉隆坡举行，8月10日总决赛将落户中国深圳。2019年KPL春季赛冠亚军、2019年KRKPL冠亚军、KPL赛区选拔赛4支晋级战队、境外赛区选拔赛4支晋级战队，共计12支参赛战队参赛</p>
+					<ul class="list-inline">
+					  <li>夏冠杯：7月</li>
+					  <li>冬冠杯：12月</li>
+					  <li>誕生時間：2016年12月</li>
+					</ul>
+					<button class="btn btn-info" data-dismiss="modal" type="button">
+					  <i class="fas fa-times"></i>
+					  關閉</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+	  <!-- Modal 3 -->
+	  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+			  <div class="lr">
+				<div class="rl"></div>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-8 mx-auto">
+				  <div class="modal-body">
+					<!-- Project Details Go Here -->
+					<h2 class="text-uppercase">王者榮耀韓國職業聯賽</h2>
+					<p class="item-intro text-muted">Korea King Pro League</p>
+					<img class="img-fluid d-block mx-auto" src="img/portfolio/krkpl_poster.jpeg" alt="">
+					<p>王者荣耀韩国职业联赛（简称KRKPL）是王者荣耀官方在韩国举办最高规格的职业赛事。全年分别为春季赛和秋季赛两个赛季，每个赛季分为常规赛、季后赛及总决赛三部分。参赛选手为韩国知名的电子竞技俱乐部组建的8支战队。2018KRKPL秋季赛将于2018年10月至12月在韩国首尔举办。KRKPL做为王者荣耀职业赛事体系战略升级的重要一环，KPL联盟联合FEG电竞共同主办。相信在不久的未来，我们将看到来自世界各地的选手活跃在王者荣耀职业赛事的舞台上。</p>
+					<ul class="list-inline">
+					  <li>春季賽：4月</li>
+					  <li>秋季賽：10月</li>
+					  <li>誕生時間：2018年10月</li>
+					</ul>
+					<button class="btn btn-info" data-dismiss="modal" type="button">
+					  <i class="fas fa-times"></i>
+					  關閉</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	
+	 
+	
+	  <!-- Bootstrap core JavaScript -->
+	  <script src="vendor/jquery/jquery.min.js"></script>
+	  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	
+	  <!-- Plugin JavaScript -->
+	  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- //what we do -->
+
+
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+
+<!-- contact -->
+    <div class="contact-wthree py-5" id="contact">
+        <div class="container py-md-3">
+				<div class="col-lg-12 text-center">
+						<h2 class="section-heading text-uppercase" style="margin-top:5px">比賽地點一覽</h2>
+						<br>
+
+				<button type="button" style="font-size:20px; height:50px; width:100;" class="btn btn-info btn-s" id='roll_up' onclick="show_districts();">KPL總決賽地點一覽</button>			
+				<button type="button" style="font-size:20px; height:50px; width:100;" class="btn btn-danger btn-s" id='roll_up' onclick="show_dis();">KCC世冠地点一览</button>
+				<br>
+				<br>
+				<style> 
+						body{text-align:center} 
+					  </style> 
+				<div id="map" style="width: 800px; height: 500px; margin-left: 15%;" text-align="center"></div>
+				
+				<br>
+				<br>
+				<style> 
+						body{text-align:center} 
+					  </style> 
+	<script>
+			var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,});
+		
+			var map = L.map('map')
+				  .addLayer(mapboxTiles)
+				  .setView([31.266718,121.468993], 3);
+				  layerGroup = L.layerGroup().addTo(map);
+						
+			var blue = L.icon({
+				iconUrl: 'img/blue.png',
+				iconSize: [40, 40], // size of the icon
+				popupAnchor: [0,-15]
+					});
+			var red = L.icon({
+				iconUrl: 'img/red.png',
+				iconSize: [40, 40], // size of the icon
+				popupAnchor: [0,-15]
+					});
+	
+			var items = [];
+			var airtable_read_endpoint = "https://api.airtable.com/v0/app1wlwKehOFNIQfW/map?api_key=keylSBEfApc4bXPo6";
+			var data = [];
+			$.getJSON(airtable_read_endpoint, function(result) {
+				   $.each(result.records, function(key,value) {
+					   items = {};
+						   items["name"] = value.fields.name;
+						   items["url"] = value.fields.url;
+						   items["image_url"] = value.fields.img_url;
+						   items["latitud"] = value.fields.lat;
+						   items["longitud"] = value.fields.lng;
+						   data.push(items);
+						   console.log(items);
+					}); // end .each
+			}); // end getJSON
+	
+			var west_items = [];
+			var airtable_read_endpoint = "https://api.airtable.com/v0/appYQHUehiSIpezbx/map?api_key=keylSBEfApc4bXPo6";
+			var west_data = [];
+			$.getJSON(airtable_read_endpoint, function(result) {
+				   $.each(result.records, function(key,value) {
+					   west_items = {};
+						   west_items["name"] = value.fields.name;
+						   west_items["url"] = value.fields.url;
+						   west_items["image_url"] = value.fields.img_url;
+						   west_items["latitud"] = value.fields.lat;
+						   west_items["longitud"] = value.fields.lng;
+						   west_data.push(west_items);
+						   console.log(west_items);
+					}); // end .each
+			});
+		  </script>
+		
+		<script>
+		  function show_districts(){
+		
+			for (var i in data) {
+				var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+				L.marker( latlng , {icon: blue})
+					.bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+					.addTo(layerGroup);
+			}
+		
+		  }
+	
+		  function show_dis(){
+		
+		for (var i in west_data) {
+			var latlng = L.latLng({ lat: west_data[i].latitud, lng: west_data[i].longitud });
+			L.marker( latlng , {icon: red})
+				.bindPopup( '<a href="' + west_data[i].url + '" target="_blank">' + '<img src="' + west_data[i].image_url+'" width = "80px"><br>'+west_data[i].name + '</a>' )
+				.addTo(layerGroup);
+		}
+	
+	  }
+		
+		</script>
+	
+					
+
+<!-- our sponsers -->
+
+
+<!-- //our sponsers -->
+
+<!-- subscribe -->
+<section class="subscribe text-center py-sm-5 pt-5 pb-4" id="subscribe">
+		<footer>
+				<div class="footer-area">
+				  <div class="container">
+					<div class="row">
+					  <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="footer-content">
+						  <div class="footer-head">
+							<div class="footer-logo">
+							  <h2 style="font-size:18px"><span>王者榮耀</span>職業聯賽</h2>
+							  <br>
+							  <br>
+							</div>
+			
+							<p>此網站旨在提供關於王者榮耀<br>職業聯賽的相關信息。 <br><br>包括對於比賽的介紹、戰隊及選手<br>的介紹和專業的數據比較。<br><br>希望您可以在網站中有所收穫！</p>
+							<div class="footer-icons">
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <!-- end single footer -->
+					  <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="footer-content">
+						  <div class="footer-head">
+							<div class="footer-logo">
+							  <h2 style="font-size:18px">網站聲明</h2>
+							  <br>
+							  <br>
+							</div>
+							<p>
+							  該網站是以個人作業為目的，<br>並非商用。<br><br>數據信息源於kpl官網，<br>如有變動，請已官方網站為準。
+							</p>
+							<br>
+							<div class="footer-contacts">
+							  <p><span>聯繫我／提出建議：</span> wangxiliu0205@gmail.com</p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <!-- end single footer -->
+					  <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="footer-content">
+						  <div class="footer-head">
+							<div class="footer-logo">
+							  <h2 style="font-size:18px">你可能感兴趣</h2>
+							  <br>
+							  <br>
+							</div>
+							<div class="flicker-img">
+							  <a href="index.html" target="_blank"><img src="images/footer1.png" alt=""></a>
+							  <a href="team.html" target="_blank"><img src="images/footer2.png" alt=""></a>
+							  <a href="video.html" target="_blank"><img src="images/footer3.png" alt=""></a>
+							  <a href="question.html" target="_blank"><img src="images/footer4.png" alt=""></a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		<!-- to top -->
+		<a href="#home" class="move-top text-center"><span class="fa fa-angle-double-up mt-3" aria-hidden="true"></span></a>
+		<!-- //to top -->
+	</div>
+</section>
+<!-- //subscribe -->
+<p>Copyright &copy; 2019.王者榮耀職業聯賽 All rights reserved. </p>
+</body>
+</html>
