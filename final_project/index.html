@@ -489,7 +489,6 @@
 						<br>
 
 				<button type="button" style="font-size:20px; height:50px; width:100;" class="btn btn-info btn-s" id='roll_up' onclick="show_districts();">KPL總決賽地點一覽</button>			
-				<button type="button" style="font-size:20px; height:50px; width:100;" class="btn btn-danger btn-s" id='roll_up' onclick="show_dis();">KCC世冠地点一览</button>
 				<br>
 				<br>
 				<style> 
@@ -515,11 +514,6 @@
 				iconSize: [40, 40], // size of the icon
 				popupAnchor: [0,-15]
 					});
-			var red = L.icon({
-				iconUrl: 'img/red.png',
-				iconSize: [40, 40], // size of the icon
-				popupAnchor: [0,-15]
-					});
 	
 			var items = [];
 			var airtable_read_endpoint = "https://api.airtable.com/v0/app1wlwKehOFNIQfW/map?api_key=keylSBEfApc4bXPo6";
@@ -537,21 +531,6 @@
 					}); // end .each
 			}); // end getJSON
 	
-			var west_items = [];
-			var airtable_read_endpoint = "https://api.airtable.com/v0/appYQHUehiSIpezbx/map?api_key=keylSBEfApc4bXPo6";
-			var west_data = [];
-			$.getJSON(airtable_read_endpoint, function(result) {
-				   $.each(result.records, function(key,value) {
-					   west_items = {};
-						   west_items["name"] = value.fields.name;
-						   west_items["url"] = value.fields.url;
-						   west_items["image_url"] = value.fields.img_url;
-						   west_items["latitud"] = value.fields.lat;
-						   west_items["longitud"] = value.fields.lng;
-						   west_data.push(west_items);
-						   console.log(west_items);
-					}); // end .each
-			});
 		  </script>
 		
 		<script>
@@ -565,17 +544,6 @@
 			}
 		
 		  }
-	
-		  function show_dis(){
-		
-		for (var i in west_data) {
-			var latlng = L.latLng({ lat: west_data[i].latitud, lng: west_data[i].longitud });
-			L.marker( latlng , {icon: red})
-				.bindPopup( '<a href="' + west_data[i].url + '" target="_blank">' + '<img src="' + west_data[i].image_url+'" width = "80px"><br>'+west_data[i].name + '</a>' )
-				.addTo(layerGroup);
-		}
-	
-	  }
 		
 		</script>
 	
