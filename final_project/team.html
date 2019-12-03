@@ -1,282 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>TheEvent - Bootstrap Event Template</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+<title>王者榮耀職業聯賽</title>
+	
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="KPL, KRKPL, KCC" />
+	
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script> 
+	<!--// Meta tag Keywords -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js">
+</script>
+	<!-- css files -->
+	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+	<link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Font-Awesome-Icons-CSS -->
+	<link href="css/agency.min.css" rel="stylesheet">
+	<link href="css/widget.css" rel="stylesheet">
+	<link href="css/rank.css" rel="stylesheet">
+	<!-- //css files -->
+	
+	<!--web font-->
+	<link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+	<!--//web font-->
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-   <section id="schedule" class="section-with-bg">
-      <div class="container wow fadeInUp">
-        <div class="section-header">
-          <h2>近期賽程</h2>
 
+<!-- //header -->
+<header>	
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-md-4">
+        <div id="logo">
+			<h1> <a href="index.html"><span class="fa fa-glass" aria-hidden="true"></span> KPL <span class="block">王者榮耀職業聯賽</span></a></h1>
+		</div>
+
+        <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu mt-md-3">
+                <li class="mr-lg-4 mr-3 active"><a href="#"></a></li>
+                <li class="mr-lg-4 mr-3">
+                <!-- First Tier Drop Down -->
+                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                <a href="index.html">主頁<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                <input type="checkbox" id="drop-2"/>
+                <ul class="drop-down">
+                    <li><a href="#about">往日榮耀</a></li>
+                    <li><a href="#events">近期賽程</a></li>
+                    <li><a href="#portfolio">各聯賽簡介</a></li>
+                    <li><a href="#contact">比賽地點</a></li>
+                </ul>
+                </li>
+				<li class="mr-lg-4 mr-3"><a href="team.html">戰隊及數據</a></li>
+				<li class="mr-lg-4 mr-3"><a href="video.html">精彩集錦</a></li>
+				<li class="mr-lg-4 mr-3"><a href="question.html">留言區</a></li>
+            </ul>
+        </nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+		
+<!-- banner -->
+<style>
+.banner{
+	background:url(img/03.jpeg) no-repeat center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+    min-height: 770px;
+}
+</style>
+
+<section class="banner" id="home">
+		<div class="banner-layer">
+			<div class="container">
+				<div class="w3pvt_banner_info text-center">
+					<div class="w3layouts_banner_margin">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+								<br>
+						<br>
+						<a href="#events"> 戰隊KDA排行榜 </a>
+					</div>
+				</div>
+				<!-- To bottom button-->
+				<div class="thim-click-to-bottom mt-5 pt-md-5">
+					<div class="rotate">
+						<a href="#about" class="scroll">
+							<span class="fa fa-angle-double-down"></span>
+						</a>
+					</div>
+				</div>
+				<!-- //To bottom button-->
+			</div>
+		</div>
+	</section>
+<!-- //banner -->	
+
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+<!-- about -->
+		<section class="pb-5 py-4 team-agile position-relative" id="team">
+				<div class="container py-lg-5">
+					<h2 class="heading" style="text-align:center">人氣戰隊</h2>
+					<div class="d-flex team-agile-row pt-sm-5 pt-3">
+						<div class="col-lg-3 col-sm-6 w3pvt-team">
+							<div class="box20">
+								<a href="estar.html" target="_blank"><img src="images/estar.png" alt="" class="img-fluid" style="width: 240px;height:240px"></a>
+								<div class="box-content">
+									<h3 class="title">eStarPro</h3>
+									<span class="post">東部賽區</span>
+								</div>
+								<ul class="icon">
+									<li>
+										<a href="estar.html">
+										</a>
+									</li>
+							
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 mt-sm-0 mt-4 w3pvt-team">
+							<div class="box20">
+						<a href="qg.html" target="_blank"><img src="images/qg.png" alt="" class="img-fluid" style="width: 240px;height:240px"></a>
+								<div class="box-content">
+									<h3 class="title">QGhappy</h3>
+									<span class="post">東部賽區</span>
+								</div>
+								<ul class="icon">
+									<li>
+										<a href="qg.html">
+					
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 mt-lg-0 mt-4 w3pvt-team">
+							<div class="box20">
+							<a href="edgm.html" target="_blank"><img src="images/edgm.png" alt="" class="img-fluid" style="width: 240px;height:240px"></a>
+								<div class="box-content">
+									<h3 class="title">EDG.M</h3>
+									<span class="post">東部賽區</span>
+								</div>
+								<ul class="icon">
+									<li>
+										<a href="edgm.html">
+										
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6 mt-lg-0 mt-4 w3pvt-team">
+							<div class="box20">
+						<a href="hero.html" target="_blank"><img src="images/hero.png" alt="" class="img-fluid" style="width: 240px;height:240px"></a>
+								<div class="box-content">
+									<h3 class="title">HERO久競</h3>
+									<span class="post">西部賽區</span>
+								</div>
+								<ul class="icon">
+									<li>
+										<a href="hero.html">
+								
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section"><div class="container"><div class="row"
+					><div class="col-md-6 text-right"><a class="btn btn-lg btn-info" onclick="showIt()" style="color:azure">點擊查看更多戰隊</a></div>
+					<div class="col-md-6 text-left"><a class="btn btn-lg btn-warning"onclick="hideIt()" style="color:azure">收起表格</a></div></div></div></div>
+						<br>
+			
+						<div id="airtable"  style="display:none">
+					  <iframe class="airtable-embed" src="https://airtable.com/embed/shrmsKt4MXYh37WAr?backgroundColor=blue&viewControls=on"
+					  frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;" id="airtable"></iframe>
+						</div>
+			<script>
+			function showIt(){
+				document.getElementById('airtable').style.display='block';
+		}
+		function hideIt(){
+				document.getElementById('airtable').style.display='none';
+		}
+			</script>
+			</section>
+			<!-- //team -->
+
+
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+
+<!-- events -->
+<section class="events py-5 " id="events" style="text-align: center;">
+		<div class="widget widget_ranking widget_league_table">
+				<!--Heading 1 Start-->
+				<h2 class="kf_hd1">
+					2019年kpl秋季賽戰隊數據排行榜<br>
+				</h2>
+				<!--Heading 1 END-->
+					<!--Table Wrap Start-->
+					<ul class="kf_table">
+						<li class="table_head">
+							<div class="team_name">
+								<strong>排名</strong>
+							</div>
+							<div class="team_logo">
+							</div>
+							<div class="match_win">
+								<strong>場均擊殺</strong>
+							</div>
+							<div class="match_loss">
+								<strong>場均助攻</strong>
+							</div>
+							<div class="team_point">
+								<strong>場均死亡</strong>
+							</div>
+						</li>
+						<li>
+							<div class="table_no">
+								<span>1</span>
+							</div>
+							<div class="team_logo">
+								<span><img src="img/logo/qg.png" alt=""style="font-size:20px; height:50px; width:50px;">
+
+								</span>
+								<strong>QGhappy</strong>
+							</div>
+							<div class="match_win">
+								<span>11.9</span>
+							</div>
+							<div class="match_win">
+								<span>28.2</span>
+							</div>
+							<div class="team_point">
+								<span>8.5</span>
+							</div>
+						</li>
+						<li>
+							<div class="table_no">
+								<span>2</span>
+							</div>
+							<div class="team_logo">
+							<span><img src="img/logo/xq.png" alt=""style="font-size:20px; height:50px; width:50px;">
+								<strong>XQ</strong>
+							</div>
+							<div class="match_win">
+								<span>12.3</span>
+							</div>
+							<div class="match_win">
+								<span>28.2</span>
+							</div>
+							<div class="team_point">
+								<span>8.5</span>
+							</div>
+						</li>
+
+						<li>
+								<div class="table_no">
+									<span>3</span>
+								</div>
+								<div class="team_logo">
+								<span><img src="img/logo/estar.png" alt=""style="font-size:20px; height:50px; width:50px;">
+									<strong>eStarPro</strong>
+								</div>
+								<div class="match_win">
+									<span>12.7</span>
+								</div>
+								<div class="match_win">
+									<span>29.3</span>
+								</div>
+								<div class="team_point">
+									<span>10.5</span>
+								</div>
+							</li>
+			
+							<li>
+									<div class="table_no">
+										<span>4</span>
+									</div>
+									<div class="team_logo">
+									<span><img src="img/logo/ag.png" alt=""style="font-size:20px; height:50px; width:50px;">
+										<strong>AG超玩會</strong>
+									</div>
+									<div class="match_win">
+										<span>11.7</span>
+									</div>
+									<div class="match_win">
+										<span>28.4</span>
+									</div>
+									<div class="team_point">
+										<span>10.3</span>
+									</div>
+								</li>
+
+								<li>
+										<div class="table_no">
+											<span>5</span>
+										</div>
+										<div class="team_logo">
+										<span><img src="img/logo/edgm.png" alt=""style="font-size:20px; height:50px; width:50px;">
+											<strong>EDG.M</strong>
+										</div>
+										<div class="match_win">
+											<span>11.5</span>
+										</div>
+										<div class="match_win">
+											<span>27.7</span>
+										</div>
+										<div class="team_point">
+											<span>10.9</span>
+										</div>
+									</li>
+
+									<li>
+											<div class="table_no">
+												<span>6</span>
+											</div>
+											<div class="team_logo">
+											<span><img src="img/logo/rw.png" alt=""style="font-size:20px; height:50px; width:50px;">
+												<strong>	RW俠</strong>
+											</div>
+											<div class="match_win">
+												<span>11.9</span>
+											</div>
+											<div class="match_win">
+												<span>28.2</span>
+											</div>
+											<div class="team_point">
+												<span>11.4</span>
+											</div>
+										</li>
+
+										<li>
+												<div class="table_no">
+													<span>7</span>
+												</div>
+												<div class="team_logo">
+												<span><img src="img/logo/dygjc.png" alt=""style="font-size:20px; height:50px; width:50px;">
+													<strong>DYG.JC</strong>
+												</div>
+												<div class="match_win">
+													<span>11.7</span>
+												</div>
+												<div class="match_win">
+													<span>28.3</span>
+												</div>
+												<div class="team_point">
+													<span>11.9</span>
+												</div>
+											</li>
+
+											<li>
+													<div class="table_no">
+														<span>8</span>
+													</div>
+													<div class="team_logo">
+													<span><img src="img/logo/hero.png" alt=""style="font-size:20px; height:50px; width:50px;">
+														<strong>HERO久競</strong>
+													</div>
+													<div class="match_win">
+														<span>11.3</span>
+													</div>
+													<div class="match_win">
+														<span>27.7</span>
+													</div>
+													<div class="team_point">
+														<span>11.6</span>
+													</div>
+												</li>
+
+												<li>
+														<div class="table_no">
+															<span>9</span>
+														</div>
+														<div class="team_logo">
+														<span><img src="img/logo/ts.png" alt=""style="font-size:20px; height:50px; width:50px;">
+															<strong>TS</strong>
+														</div>
+														<div class="match_win">
+															<span>9.2</span>
+														</div>
+														<div class="match_win">
+															<span>21.3</span>
+														</div>
+														<div class="team_point">
+															<span>9.8</span>
+														</div>
+													</li>
+													<li>
+															<div class="table_no">
+																<span>10</span>
+															</div>
+															<div class="team_logo">
+															<span><img src="img/logo/tes.png" alt=""style="font-size:20px; height:50px; width:50px;">
+																<strong>TES</strong>
+															</div>
+															<div class="match_win">
+																<span>10.9</span>
+															</div>
+															<div class="match_win">
+																<span>25.7</span>
+															</div>
+															<div class="team_point">
+																<span>11.9</span>
+															</div>
+														</li>
+
+														<li>
+																<div class="table_no">
+																	<span>11</span>
+																</div>
+																<div class="team_logo">
+																<span><img src="img/logo/rng.png" alt=""style="font-size:20px; height:50px; width:50px;">
+																	<strong>RNG.M</strong>
+																</div>
+																<div class="match_win">
+																	<span>12.0</span>
+																</div>
+																<div class="match_win">
+																	<span>28.4</span>
+																</div>
+																<div class="team_point">
+																	<span>13.1</span>
+																</div>
+															</li>
+
+															<li>
+																	<div class="table_no">
+																		<span>12</span>
+																	</div>
+																	<div class="team_logo">
+																	<span><img src="img/logo/gk.png" alt=""style="font-size:20px; height:50px; width:50px;">
+																		<strong>GK</strong>
+																	</div>
+																	<div class="match_win">
+																		<span>11.5</span>
+																	</div>
+																	<div class="match_win">
+																		<span>26.9</span>
+																	</div>
+																	<div class="team_point">
+																		<span>12.6</span>
+																	</div>
+																</li>
+																<li>
+																		<div class="table_no">
+																			<span>13</span>
+																		</div>
+																		<div class="team_logo">
+																		<span><img src="img/logo/vg.png" alt=""style="font-size:20px; height:50px; width:50px;">
+																			<strong>VG</strong>
+																		</div>
+																		<div class="match_win">
+																			<span>9.6</span>
+																		</div>
+																		<div class="match_win">
+																			<span>22.4</span>
+																		</div>
+																		<div class="team_point">
+																			<span>11.5</span>
+																		</div>
+																	</li>
+
+																	<li>
+																			<div class="table_no">
+																				<span>14</span>
+																			</div>
+																			<div class="team_logo">
+																			<span><img src="img/logo/ytg.png" alt=""style="font-size:20px; height:50px; width:50px;">
+																				<strong>YTG</strong>
+																			</div>
+																			<div class="match_win">
+																				<span>10.5</span>
+																			</div>
+																			<div class="match_win">
+																				<span>22.5</span>
+																			</div>
+																			<div class="team_point">
+																				<span>13.0</span>
+																			</div>
+																		</li>
+
+																		<li>
+																				<div class="table_no">
+																					<span>15</span>
+																				</div>
+																				<div class="team_logo">
+																				<span><img src="img/logo/we.png" alt=""style="font-size:20px; height:50px; width:50px;">
+																					<strong>WE</strong>
+																				</div>
+																				<div class="match_win">
+																					<span>9.3</span>
+																				</div>
+																				<div class="match_win">
+																					<span>21.6</span>
+																				</div>
+																				<div class="team_point">
+																					<span>12.7</span>
+																				</div>
+																			</li>
+					</ul>
+					<!--Table Wrap End-->
+				</div>
+			</div>
+</section>
+<!-- //events -->
+
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+
+<!-- what we do -->
+
+<!-- //what we do -->
+
+
+<!-- fireworks animation -->
+<div class="pyro">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+<!-- //fireworks animation -->
+<div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
+
+<!-- contact -->
+<div class="container">
+	<div class="row">
+		<img src="img/white.jpg">
+			<div class="col-lg-12 text-center">
+					<h2 class="section-heading text-uppercase" style="margin-top:5px">俱樂部位置一覽</h2>
+					<br>
+	   <div class="col-xs-12 col-sm-12 col-md-12">   
+		 <button type="button" style="font-size:20px; height:50px; width:100;" class="btn btn-info btn-s" id='roll_up' onclick="show_districts();">東部賽區俱樂部</button>
+		 <button type="button" style="font-size:20px; height:50px; width:100;" class="btn btn-warning btn-s" id='roll_up' onclick="show_dis();">西部賽區俱樂部</button>		
+		 <br><br>
+		 <div id="map" style="width: 800px; height: 500px; margin-left: 15%;" text-align="center"></div>
+	   </div><!-- column -->
+	</div><!-- row -->
+  </div><!-- end col -->
+</div><!--end row -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+		var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,});
+	
+		var map = L.map('map')
+			  .addLayer(mapboxTiles)
+			  .setView([31.266718,121.468993], 4);
+			  layerGroup = L.layerGroup().addTo(map);
+					
+		var blue = L.icon({
+            iconUrl: 'img/blue.png',
+            iconSize: [40, 40], // size of the icon
+            popupAnchor: [0,-15]
+				});
+		var red = L.icon({
+            iconUrl: 'img/red.png',
+            iconSize: [40, 40], // size of the icon
+            popupAnchor: [0,-15]
+				});
+
+		var items = [];
+		var airtable_read_endpoint = "https://api.airtable.com/v0/appySSVdnGWAIKmsO/east?api_key=keylSBEfApc4bXPo6";
+		var data = [];
+		$.getJSON(airtable_read_endpoint, function(result) {
+			   $.each(result.records, function(key,value) {
+				   items = {};
+					   items["name"] = value.fields.name;
+					   items["url"] = value.fields.url;
+					   items["image_url"] = value.fields.img_url;
+					   items["latitud"] = value.fields.lat;
+					   items["longitud"] = value.fields.lng;
+					   data.push(items);
+					   console.log(items);
+				}); // end .each
+		}); // end getJSON
+
+		var west_items = [];
+		var airtable_read_endpoint = "https://api.airtable.com/v0/appySSVdnGWAIKmsO/west?api_key=keylSBEfApc4bXPo6";
+		var west_data = [];
+		$.getJSON(airtable_read_endpoint, function(result) {
+			   $.each(result.records, function(key,value) {
+				   west_items = {};
+					   west_items["name"] = value.fields.name;
+					   west_items["url"] = value.fields.url;
+					   west_items["image_url"] = value.fields.img_url;
+					   west_items["latitud"] = value.fields.lat;
+					   west_items["longitud"] = value.fields.lng;
+					   west_data.push(west_items);
+					   console.log(west_items);
+				}); // end .each
+		});
+	  </script>
+	
+	<script>
+	  function show_districts(){
+	
+		for (var i in data) {
+			var latlng = L.latLng({ lat: data[i].latitud, lng: data[i].longitud });
+			L.marker( latlng , {icon: blue})
+				.bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].name + '</a>' )
+				.addTo(layerGroup);
+		}
+	
+	  }
+
+	  function show_dis(){
+	
+	for (var i in west_data) {
+		var latlng = L.latLng({ lat: west_data[i].latitud, lng: west_data[i].longitud });
+		L.marker( latlng , {icon: red})
+			.bindPopup( '<a href="' + west_data[i].url + '" target="_blank">' + '<img src="' + west_data[i].image_url+'" width = "80px"><br>'+west_data[i].name + '</a>' )
+			.addTo(layerGroup);
+	}
+
+  }
+	
+	</script>
+	
+	
+					
+
+<!-- our sponsers -->
+  <!-- CSS -->
+  <link href="gallery/02/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="gallery/02/owl.carousel.css" rel="stylesheet" media="screen" />
+  <link href="gallery/02/owl.theme.css" rel="stylesheet" media="screen" />
+  <link href="gallery/02/animate.css" rel="stylesheet" />
+  <link href="gallery/02/style.css" rel="stylesheet">
+  <link href="gallery/02/default.css" rel="stylesheet">
+ 
+  <!-- Section: gallery -->
+  <section id="gallery" class="home-section text-center bg-gray">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="wow bounceInDown" data-wow-delay="0.4s">
+            <div class="section-heading">
+              <h2><strong>2019年常規賽最佳選手</strong></h2>
+              <br>
+            </div>
+          </div>
         </div>
-
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">第一週</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">第二週</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">第三週</a>
-          </li>
-        </ul>
-
-        <div class="tab-content row justify-content-center">
-
-          <!-- Schdule Day 1 -->
-          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11.15 7:00PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                    <img src="img/team/01.png" alt="Brenden Legros">
-                  </div>                
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Keynote <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 1 -->
-
-          <!-- Schdule Day 2 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-          <!-- Schdule Day 3 -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>10:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/2.jpg" alt="Hubert Hirthe">
-                </div>
-                <h4>Et voluptatem iusto dicta nobis. <span>Hubert Hirthe</span></h4>
-                <p>Maiores dignissimos neque qui cum accusantium ut sit sint inventore.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>11:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/3.jpg" alt="Cole Emmerich">
-                </div>
-                <h4>Explicabo et rerum quis et ut ea. <span>Cole Emmerich</span></h4>
-                <p>Veniam accusantium laborum nihil eos eaque accusantium aspernatur.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>12:00 AM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/1.jpg" alt="Brenden Legros">
-                </div>
-                <h4>Libero corrupti explicabo itaque. <span>Brenden Legros</span></h4>
-                <p>Facere provident incidunt quos voluptas.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>02:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/4.jpg" alt="Jack Christiansen">
-                </div>
-                <h4>Qui non qui vel amet culpa sequi. <span>Jack Christiansen</span></h4>
-                <p>Nam ex distinctio voluptatem doloremque suscipit iusto.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>03:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/5.jpg" alt="Alejandrin Littel">
-                </div>
-                <h4>Quos ratione neque expedita asperiores. <span>Alejandrin Littel</span></h4>
-                <p>Eligendi quo eveniet est nobis et ad temporibus odio quo.</p>
-              </div>
-            </div>
-
-            <div class="row schedule-item">
-              <div class="col-md-2"><time>04:00 PM</time></div>
-              <div class="col-md-10">
-                <div class="speaker">
-                  <img src="img/speakers/6.jpg" alt="Willow Trantow">
-                </div>
-                <h4>Quo qui praesentium nesciunt <span>Willow Trantow</span></h4>
-                <p>Voluptatem et alias dolorum est aut sit enim neque veritatis.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- End Schdule Day 2 -->
-
-        </div>
-
       </div>
+    </div>
 
-    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="wow bounceInUp" data-wow-delay="0.4s">
+            <div id="owl-works" class="owl-carousel">
+                <div class="item"><a href="img/mvp/mvp.jpeg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/mvp/mvp.jpeg" class="img-responsive" alt="img"></a></div>
+                <div class="item"><a href="img/mvp/top.jpeg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/mvp/top.jpeg" class="img-responsive " alt="img"></a></div>
+                <div class="item"><a href="img/mvp/mid.jpeg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/mvp/mid.jpeg" class="img-responsive " alt="img"></a></div>
+                <div class="item"><a href="img/mvp/bottom.jpeg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/mvp/bottom.jpeg" class="img-responsive " alt="img"></a></div>
+                <div class="item"><a href="img/mvp/juggle.jpeg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/mvp/juggle.jpeg" class="img-responsive " alt="img"></a></div>
+                <div class="item"><a href="img/mvp/support.jpeg" title="This is an image title" data-lightbox-gallery="gallery1"><img src="img/mvp/support.jpeg" class="img-responsive " alt="img"></a></div>
+               </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	<br>
+	<h2><strong>2019年選手KDA數據整理</strong></h2>
+	<br>
+  <!-- /Section: services -->
 
-      <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Core JavaScript Files -->
+  <script src='js/table.js'></script>
+  <script src="gallery/01/jquery.min.js"></script>
+  <script src="gallery/01/bootstrap.min.js"></script>
+ <script src="gallery/01/wow.min.js"></script>
+  <script src="gallery/01/owl.carousel.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="gallery/01/custom.js"></script>
+<!-- //our sponsers -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+			<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	
+
+				<div class="col-md-6 text-center" style="margin-left: -50%;"></div>
+				<button type="button" class="btn btn-info btn-lg" id='get_data'style="text-align: center;">查看選手KDA數據</button><br>
+				<div id="infomation" style="display: none;">
+						<br><br><h4 class="section-heading text-muted">“數據僅列出前50位職業選手的KDA數據“</h4><br>
+						<div class="col-lg-12 text-center">
+						<h6 class="service-heading">KDA=[(＃擊殺＋＃助攻)/＃死亡]</h6>
+						<h6 class="service-heading">場均數據包括2019年春季常規賽和季後賽</h6>
+				<div class="table-responsive">
+					  <table id="table1" width="100%" class="table table-bordered"></table>
+				</div><!-- table responsive -->
+				<button type="button" class="btn btn-warning btn-lg" id='get_data2'>Top 50選手戰隊所屬一覽</button><br>
+				<div class="table-responsive">
+					  <table id="table2" width="100%" class="table table-bordered"></table>
+				</div><!-- table responsive -->
+		</div>
+		<script>    
+		$(document).ready(function(){
+			$("button#get_data").click(function() {
+			  $("#infomation").slideToggle();
+			});
+			});
+		</script>
+		<script src='js/table.js'></script>
+	  </section>
+
+
+<!-- subscribe -->
+<section class="subscribe text-center py-sm-5 pt-5 pb-4" id="subscribe">
+		<footer>
+				<div class="footer-area">
+				  <div class="container">
+					<div class="row">
+					  <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="footer-content">
+						  <div class="footer-head">
+							<div class="footer-logo">
+							  <h2 style="font-size:18px"><span>王者榮耀</span>職業聯賽</h2>
+							  <br>
+							  <br>
+							</div>
+			
+							<p>此網站旨在提供關於王者榮耀<br>職業聯賽的相關信息。 <br><br>包括對於比賽的介紹、戰隊及選手<br>的介紹和專業的數據比較。<br><br>希望您可以在網站中有所收穫！</p>
+							<div class="footer-icons">
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <!-- end single footer -->
+					  <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="footer-content">
+						  <div class="footer-head">
+							<div class="footer-logo">
+							  <h2 style="font-size:18px">網站聲明</h2>
+							  <br>
+							  <br>
+							</div>
+							<p>
+							  該網站是以個人作業為目的，<br>並非商用。<br><br>數據信息源於kpl官網，<br>如有變動，請已官方網站為準。
+							</p>
+							<br>
+							<div class="footer-contacts">
+							  <p><span>聯繫我／提出建議：</span> wangxiliu0205@gmail.com</p>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					  <!-- end single footer -->
+					  <div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="footer-content">
+						  <div class="footer-head">
+							<div class="footer-logo">
+							  <h2 style="font-size:18px">你可能感兴趣</h2>
+							  <br>
+							  <br>
+							</div>
+							<div class="flicker-img">
+									<a href="index.html" target="_blank"><img src="images/footer1.png" alt=""></a>
+									<a href="team.html" target="_blank"><img src="images/footer2.png" alt=""></a>
+									<a href="video.html" target="_blank"><img src="images/footer3.png" alt=""></a>
+									<a href="question.html" target="_blank"><img src="images/footer4.png" alt=""></a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+		<!-- to top -->
+		<a href="#home" class="move-top text-center"><span class="fa fa-angle-double-up mt-3" aria-hidden="true"></span></a>
+		<!-- //to top -->
+	</div>
+</section>
+<!-- //subscribe -->
+<p>Copyright &copy; 2019.王者榮耀職業聯賽 All rights reserved. </p>
 </body>
-
 </html>
